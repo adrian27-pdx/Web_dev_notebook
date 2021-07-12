@@ -1,5 +1,6 @@
 .container {
   width: 300px;
+  outline: 1px solid var(--navy);
 }
 
 .image {

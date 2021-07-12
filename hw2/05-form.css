@@ -1,14 +1,45 @@
 .form {
+  width: 400px;
+  height: 550px;
+  outline: 2px solid var(--black);
+  padding: 20px;
+  /* text-align: center; */
+}
+
+h1 {
+  text-align: center;
 }
 
 .form-element {
+  float: left;
+  width: 40%;
+  font-weight: bold;
 }
 
 .btn {
+  border: 0;
 }
 
 .btn-primary {
+  background-color: var(--green);
+  color: var(--white);
+  width: 45%;
+  height: 50px;
+  position: relative;
+  right: 5px;
+  left: 10px;
 }
 
 .btn-secondary {
+  background-color: var(--white);
+  width: 45%;
+  height: 50px;
+  color: var(--green);
+  border-color: var(--green);
+  position: relative;
+  left: 5;
+}
+
+legend {
+  font-weight: bold;
 }

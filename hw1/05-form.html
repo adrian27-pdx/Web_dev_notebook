@@ -5,41 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>05 - Form</title>
-    <!-- <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../css/05-form.css" /> -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../hw2/05-form.css" />
   </head>
   <body>
     <main>
-      <h1>Registration Form</h1>
-      <form action="">
+      <form action="" class="form">
         <!-- Add your code here -->
+        <h1>
+          Registration <br />
+          Form
+        </h1>
         <div>
-          <label for="user_name">Username:</label>
-          <input type="text" id="user_name" name="user_name" /> <br><br>
+          <label class="form-element" for="user_name">Username:</label>
+          <input type="text" id="user_name" name="user_name" /> <br /><br />
         </div>
         <div>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" /> <br><br>
+          <label class="form-element" for="email">Email:</label>
+          <input type="email" id="email" name="email" /> <br /><br />
         </div>
-        <div><label for="password">Password:</label>
-          <input type="password" id="password" name="password" /> <br><br>
+        <div>
+          <label class="form-element" for="password">Password:</label>
+          <input type="password" id="password" name="password" /> <br /><br />
         </div>
-        <fieldset>
+        <fieldset class="btn">
           <legend>Would you like to sign up for the newsletter?</legend>
-          <input type="radio" name="sign_up" id="yes">
+          <input type="radio" name="sign_up" id="yes" />
           <label for="yes">Yes, sign me up</label>
-
-          <input type="radio" name="sign_up" id="no">
-          <label for="no">No, thank you</label> <br><br>
-        </fieldset> <br><br>
+          <br />
+          <input type="radio" name="sign_up" id="no" />
+          <label for="no">No, thank you</label> <br /><br />
+        </fieldset>
         <div>
-          </select>
-          <label for="date">Date:</label>
-          <input type="date" id="date" name="date" /> <br><br>
+          <label class="form-element" for="date">Date:</label>
+          <input type="date" id="date" name="date" /> <br /><br />
         </div>
-        <div> 
-          <input type="submit" name="submit" value="Submit"/> 
-          <input type="reset" name="reset" value="Reset"/> 
+        <div>
+          <input
+            class="btn-primary"
+            type="submit"
+            name="submit"
+            value="Submit"
+          />
+          <input
+            class="btn-secondary"
+            type="reset"
+            name="reset"
+            value="Reset"
+          />
         </div>
       </form>
     </main>
