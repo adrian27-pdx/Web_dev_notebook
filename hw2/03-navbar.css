@@ -1,12 +1,31 @@
 body {
   margin: 0;
+  text-align: center;
 }
 
 .nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .list-item {
+  float: left;
+  background-color: var(--green);
 }
 
 .nav-link {
+  display: block;
+  color: var(--white);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.list-item:hover {
+  background-color: var(--orange);
+}
+
+.nav-link:hover {
+  color: var(--black);
 }
