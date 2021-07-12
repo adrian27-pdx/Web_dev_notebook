@@ -4,8 +4,20 @@
 
 .table-heading {
   /* use green and white for the colors - these colors are defined in the styles.css file */
+  background-color: var(--green);
+  color: var(--white);
 }
 
 .channel {
   /* use orange and black for the colors - these colors are defined in the styles.css file */
+  background-color: var(--orange);
+}
+
+tr {
+  line-height: 50px;
+}
+
+td {
+  width: 200px;
+  padding: 10px;
 }
