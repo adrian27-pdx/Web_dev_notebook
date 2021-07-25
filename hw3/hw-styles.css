@@ -175,7 +175,93 @@ h1 {
   }
 }
 /* Code for exercise 04-grid */
+.grid-container-2 :nth-child(1) {
+  grid-area: Header;
+}
+.grid-container-2 :nth-child(2) {
+  grid-area: Jumbotron;
+}
+.grid-container-2 :nth-child(3) {
+  grid-area: Card_1;
+}
+.grid-container-2 :nth-child(4) {
+  grid-area: Card_2;
+}
+.grid-container-2 :nth-child(5) {
+  grid-area: Card_3;
+}
+.grid-container-2 :nth-child(6) {
+  grid-area: Section;
+}
+.grid-container-2 :nth-child(7) {
+  grid-area: Footer;
+}
 
+/* .grid-container-2 {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'Header'
+    'Jumbotron'
+    'Section'
+    'Card_1'
+    'Card_2'
+    'Footer';
+} */
+@media (min-width: 414px) {
+  .grid-container-2 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'Header'
+      'Jumbotron'
+      'Section'
+      'Card_1'
+      'Card_2'
+      'Footer';
+  }
+  .grid-container-2 :nth-child(5) {
+    visibility: hidden;
+  }
+}
+@media (min-width: 768px) {
+  .grid-container-2 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+      'Header Header'
+      'Jumbotron Jumbotron'
+      'Section Section'
+      'Card_1 Card_2'
+      'Footer Footer';
+  }
+  .grid-container-2 :nth-child(5) {
+    visibility: hidden;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container-2 {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    grid-template-areas:
+      'Header Header Header'
+      'Jumbotron Jumbotron Jumbotron'
+      'Card_1 Card_2 Card_3'
+      'Section Section Section'
+      'Footer Footer Footer';
+  }
+  .grid-container-2 :nth-child(5) {
+    visibility: visible;
+  }
+}
 /* Code for exercise 05-bootstrap-grid */
 
 .bootstrap-grid .row > * {
