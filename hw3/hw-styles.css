@@ -36,9 +36,35 @@ h1 {
 /* Code for exercise 02-flex */
 
 .flex-container-2 {
+  display: flex;
   height: 400px;
+  flex-flow: column-reverse wrap;
+  align-items: flex-end;
 }
-
+.flex-container-1 :nth-child(1) {
+  order: 3;
+}
+.flex-container-1 :nth-child(2) {
+  order: 4;
+}
+.flex-container-1 :nth-child(3) {
+  order: 5;
+}
+.flex-container-1 :nth-child(4) {
+  order: 2;
+}
+.flex-container-1 :nth-child(5) {
+  order: 6;
+}
+.flex-container-1 :nth-child(6) {
+  order: 8;
+}
+.flex-container-1 :nth-child(7) {
+  order: 1;
+}
+.flex-container-1 :nth-child(8) {
+  order: 7;
+}
 /* Code for exercise 03-grid */
 
 /* Code for exercise 04-grid */
