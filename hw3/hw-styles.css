@@ -3,12 +3,6 @@ h1 {
 }
 
 /* Code for exercise 01-flex */
-.flex-container-1 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  justify-content: flex-end;
-}
 .flex-container-1 :nth-child(1) {
   order: 3;
 }
@@ -32,40 +26,87 @@ h1 {
 }
 .flex-container-1 :nth-child(8) {
   order: 7;
+}
+
+@media (min-width: 414px) {
+  .flex-container-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    width: 414px;
+  }
+}
+@media (min-width: 768px) {
+  .flex-container-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .flex-container-1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+    width: 1024px;
+  }
 }
 /* Code for exercise 02-flex */
-
-.flex-container-2 {
-  display: flex;
-  height: 400px;
-  flex-flow: column-reverse wrap;
-  align-items: flex-end;
-}
-.flex-container-1 :nth-child(1) {
+.flex-container-2 :nth-child(1) {
   order: 3;
 }
-.flex-container-1 :nth-child(2) {
+.flex-container-2 :nth-child(2) {
   order: 4;
 }
-.flex-container-1 :nth-child(3) {
+.flex-container-2 :nth-child(3) {
   order: 5;
 }
-.flex-container-1 :nth-child(4) {
+.flex-container-2 :nth-child(4) {
   order: 2;
 }
-.flex-container-1 :nth-child(5) {
+.flex-container-2 :nth-child(5) {
   order: 6;
 }
-.flex-container-1 :nth-child(6) {
+.flex-container-2 :nth-child(6) {
   order: 8;
 }
-.flex-container-1 :nth-child(7) {
+.flex-container-2 :nth-child(7) {
   order: 1;
 }
-.flex-container-1 :nth-child(8) {
+.flex-container-2 :nth-child(8) {
   order: 7;
 }
-
+@media (min-width: 414px) {
+  .flex-container-2 {
+    display: flex;
+    height: 400px;
+    flex-flow: column-reverse wrap;
+    align-items: flex-end;
+    width: 414px;
+  }
+}
+@media (min-width: 768px) {
+  .flex-container-2 {
+    display: flex;
+    height: 400px;
+    flex-flow: column-reverse wrap;
+    align-items: flex-end;
+    width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .flex-container-2 {
+    display: flex;
+    height: 400px;
+    flex-flow: column-reverse wrap;
+    align-items: flex-end;
+    width: 1024px;
+  }
+}
 /* Code for exercise 03-grid */
 .grid-container-1 {
   display: grid;
@@ -105,6 +146,33 @@ h1 {
 .grid-container-1 :nth-child(8) {
   grid-column: 4 / span 3;
   grid-row: 6 / span 2;
+}
+@media (min-width: 414px) {
+  .grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 414px;
+  }
+}
+@media (min-width: 768px) {
+  .grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    width: 1024px;
+  }
 }
 /* Code for exercise 04-grid */
 
