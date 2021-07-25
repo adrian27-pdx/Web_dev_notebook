@@ -65,8 +65,47 @@ h1 {
 .flex-container-1 :nth-child(8) {
   order: 7;
 }
-/* Code for exercise 03-grid */
 
+/* Code for exercise 03-grid */
+.grid-container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.grid-container-1 :nth-child(1) {
+  grid-column: 1 / span 1;
+  grid-row: 3 / span 1;
+}
+.grid-container-1 :nth-child(2) {
+  grid-column: 2 / span 4;
+  grid-row: 3 / span 3;
+}
+.grid-container-1 :nth-child(3) {
+  grid-column: 6 / span 1;
+  grid-row: 3 / span 1;
+}
+.grid-container-1 :nth-child(4) {
+  grid-column: 1 / span 1;
+  grid-row: 4 / span 2;
+}
+.grid-container-1 :nth-child(5) {
+  grid-column: 6 / span 1;
+  grid-row: 4 / span 2;
+}
+.grid-container-1 :nth-child(6) {
+  grid-column: 1 / span 3;
+  grid-row: 6 / span 2;
+}
+.grid-container-1 :nth-child(7) {
+  grid-column: 1 / span 6;
+  grid-row: 1 / span 2;
+}
+.grid-container-1 :nth-child(8) {
+  grid-column: 4 / span 3;
+  grid-row: 6 / span 2;
+}
 /* Code for exercise 04-grid */
 
 /* Code for exercise 05-bootstrap-grid */
