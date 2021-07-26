@@ -264,7 +264,7 @@ h1 {
 }
 /* Code for exercise 05-bootstrap-grid */
 
-.bootstrap-grid .row > * {
+.bootstrap-grid-1 .row > * {
   height: 100px;
   border: 1px solid var(--white);
   padding: 10px;
@@ -290,4 +290,6 @@ h1 {
 
 form {
   width: 400px;
+  text-align: left;
+  background-color: var(--gray4);
 }
