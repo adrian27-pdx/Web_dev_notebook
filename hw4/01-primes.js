@@ -12,6 +12,7 @@ const isPrime = (current) => {
 }
 const getPrimes = () => {
   // Add your code here
+  var primes = []; 
   var start = 2; 
   var end = 100; 
   var flag = 0;
@@ -20,8 +21,10 @@ const getPrimes = () => {
     if(isPrime(current))
     {
       console.log(current);
+      primes.push(current);
     }
   }
+  return primes; 
 };
 
 getPrimes();
